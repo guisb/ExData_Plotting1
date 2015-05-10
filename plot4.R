@@ -33,26 +33,20 @@ Sys.setlocale("LC_TIME", "English")
 par(mfrow = c(2,2), mar = c(4,4,2,1), oma = c(0,0,2,0))
 
 plot(date_time, gap, type = "l", ylab = "Global Active Power", xlab = "")
-axis.Date(1, at=seq(as.Date("1/2/2007"), as.Date("2/2/2007"), "weeks"), 
-          cex.axis=1, lwd=1)
 
 
 plot(date_time, voltage, type="l", xlab="datetime", ylab="Voltage")
-axis.Date(1, at=seq(as.Date("1/2/2007"), as.Date("2/2/2007"), "weeks"), 
-          cex.axis=1, lwd=1)
+
 
 
 plot(date_time, sub_metering_1, type="l", ylab="Energy sub metering", xlab="")
 lines(date_time, sub_metering_2, type="l", col= 2)
 lines(date_time, sub_metering_3, type="l", col= 4)
 legend("topright", c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), lty=1, lwd=2, col=c("black", "red", "blue"), bty = "n")
-axis.Date(1, at=seq(as.Date("1/2/2007"), as.Date("2/2/2007"), "weeks"), 
-          cex.axis=1, lwd=2)
+
 
 
 plot(date_time, grp, type="l", xlab="datetime", ylab="Global_reactive_power")
-axis.Date(1, at=seq(as.Date("1/2/2007"), as.Date("2/2/2007"), "weeks"), 
-          cex.axis=1, lwd=1)
 
 
 dev.off()
