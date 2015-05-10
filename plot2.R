@@ -28,8 +28,6 @@ Sys.setlocale("LC_TIME", "English")
 
 # plot 2
 plot(date_time, gap, type = "l", ylab = "Global Active Power (kilowatts)", xlab = "")
-axis.Date(1, at=seq(as.Date("1/2/2007"), as.Date("2/2/2007"), "weeks"), 
-          cex.axis=1, lwd=1)
 
 dev.off()
 
